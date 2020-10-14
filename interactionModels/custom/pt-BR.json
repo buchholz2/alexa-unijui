@@ -1,0 +1,104 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "sou unijui",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "minhas notas",
+            "minha nota"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "notasTurmas",
+          "slots": [],
+          "samples": [
+            "notas"
+          ]
+        },
+        {
+          "name": "informacaoTurma",
+          "slots": [
+            {
+              "name": "turma",
+              "type": "diciplina"
+            },
+            {
+              "name": "informacao",
+              "type": "tipoInformacao"
+            }
+          ],
+          "samples": [
+            "quem era o {informacao} em {turma}",
+            "qual a minha {informacao} eu tirei em {turma}",
+            "{turma} era {informacao}",
+            "qual {informacao} eu tirei em {turma}",
+            "em que {informacao} eu fiz {turma}",
+            "em qual {informacao} eu tinha {turma}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "sala"
+              }
+            },
+            {
+              "name": {
+                "value": "optativa"
+              }
+            },
+            {
+              "name": {
+                "value": "notas"
+              }
+            },
+            {
+              "name": {
+                "value": "professor"
+              }
+            },
+            {
+              "name": {
+                "value": "campus"
+              }
+            }
+          ],
+          "name": "tipoInformacao"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "teste"
+              }
+            }
+          ],
+          "name": "diciplina"
+        }
+      ]
+    }
+  },
+  "version": "38"
+}
